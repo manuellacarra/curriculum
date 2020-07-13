@@ -16,17 +16,26 @@ p {
   justify-content: space-around;
   grid-template-columns: 30% 70%;
   grid-gap: 10px;
-  margin: 80px;
-  padding: 20px;
+  padding: 0px;
   margin-bottom: 30px;
-  padding-bottom: 0px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
   grid-template-areas: "izquierda derecha"; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .grid-cv {
+      margin-left: 20px;
+      margin-right: 20px;
+      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-cv #grid-izquierda {
     grid-area: izquierda;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 0px; }
+    padding-top: 0px;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv #grid-izquierda {
+        padding-left: 30px;
+        padding-right: 30px; } }
   .grid-cv #grid-derecha {
     grid-area: derecha;
     padding-left: 20px; }
@@ -41,10 +50,16 @@ p {
     font-size: 1.6rem;
     font-weight: 800;
     color: #333333; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv #manuelLacarra {
+        text-align: center; } }
   .grid-cv #text-secondary {
     font-size: 1.2rem;
     font-weight: 400;
     color: #8a8a8a; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv #text-secondary {
+        text-align: center; } }
   .grid-cv .background {
     background-color: #1f2833;
     /*#474b4f*/
@@ -52,7 +67,7 @@ p {
     z-index: 1;
     overflow: hidden;
     margin-top: 0px;
-    padding-bottom: 50px; }
+    padding-bottom: 30px; }
   .grid-cv .titulos-izquierda {
     margin-top: 30px;
     text-align: center;
@@ -168,6 +183,10 @@ p {
   margin-bottom: 20px;
   margin-left: 100px;
   margin-right: 100px; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .flexAbajo {
+      margin-left: 40px;
+      margin-right: 40px; } }
   .flexAbajo .titulosAbajo {
     border-bottom: solid;
     border-width: 1px;
@@ -185,31 +204,45 @@ p {
   margin-left: 150px;
   margin-right: 150px;
   justify-content: space-between;
-  grid-template-columns: 45% 45%;
-  grid-gap: 10%;
+  grid-template-columns: 47.5% 47.5%;
+  grid-gap: 5%;
   margin-top: 20px;
   margin-bottom: 100px;
   grid-template-areas: "izquierda derecha"; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .grid-referencias {
+      margin-left: 50px;
+      margin-right: 50px;
+      grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-referencias #ref-izquierda {
     grid-area: izquierda; }
   .grid-referencias #ref-derecha {
     grid-area: derecha; }
-  .grid-referencias .flex-referencias {
-    display: flex;
-    align-items: center; }
-    .grid-referencias .flex-referencias .ref-foto {
+  .grid-referencias .grid-cargos {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin-bottom: 15px;
+    grid-template-areas: "foto titulo" "foto cargo"; }
+    .grid-referencias .grid-cargos .ref-foto {
+      grid-area: foto;
       height: 65px;
       width: 65px;
       border-radius: 50%;
       margin-right: 10px;
       margin-bottom: 10px; }
-    .grid-referencias .flex-referencias h4 {
+    .grid-referencias .grid-cargos .ref-titulo {
+      grid-area: titulo;
       font-size: 1.1rem;
-      margin-right: 10px; }
-    .grid-referencias .flex-referencias h5 {
-      font-size: 1rem; }
+      margin-right: 10px;
+      margin-bottom: 0px; }
+    .grid-referencias .grid-cargos .ref-cargo {
+      grid-area: cargo;
+      font-size: 1rem;
+      margin-top: 0px; }
   .grid-referencias .p-referencias {
     font-style: italic;
-    font-size: 0.9rem; }
+    font-size: 0.9rem;
+    margin-left: 10px;
+    margin-right: 10px; }
 
 /*background-color: #333333;*/

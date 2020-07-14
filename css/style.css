@@ -24,21 +24,21 @@ p {
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-cv {
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-cv #grid-izquierda {
     grid-area: izquierda;
     align-items: center;
     padding-top: 0px;
     margin-bottom: 20px; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
-      .grid-cv #grid-izquierda {
-        padding-left: 30px;
-        padding-right: 30px; } }
   .grid-cv #grid-derecha {
     grid-area: derecha;
     padding-left: 20px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv #grid-derecha {
+        padding-left: 10px;
+        padding-right: 10px; } }
   .grid-cv #manuel {
     height: 200px;
     width: 200px;
@@ -68,6 +68,10 @@ p {
     overflow: hidden;
     margin-top: 0px;
     padding-bottom: 30px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv .background {
+        margin-left: 0px;
+        margin-right: 0px; } }
   .grid-cv .titulos-izquierda {
     margin-top: 30px;
     text-align: center;
@@ -91,6 +95,10 @@ p {
     margin-left: 30px;
     margin-right: 30px;
     grid-template-areas: "tel num" "sobre mail" "linkedin enlace" "flecha ciudad"; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv .grid-datos {
+        margin-left: 15px;
+        margin-right: 10px; } }
     .grid-cv .grid-datos #tel-icono-contacto {
       grid-area: tel;
       margin-top: 5px; }
@@ -124,6 +132,10 @@ p {
     margin-left: 30px;
     margin-right: 30px;
     grid-template-areas: "izquierda derecha"; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv .grid-habilidades {
+        margin-left: 15px;
+        margin-right: 5px; } }
     .grid-cv .grid-habilidades .tipo {
       grid-area: izquierda; }
     .grid-cv .grid-habilidades .habilidad {
@@ -143,10 +155,16 @@ p {
     width: 100%;
     padding-bottom: 5px;
     margin-bottom: 20px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv .titulosDerecha {
+        text-align: center; } }
   .grid-cv .flexTitulos {
     display: flex;
     align-content: center;
     margin-bottom: 20px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv .flexTitulos {
+        text-align: center; } }
     .grid-cv .flexTitulos .iconos {
       margin-right: 15px;
       margin-top: 5px;
@@ -155,6 +173,10 @@ p {
     margin-left: 50px;
     margin-bottom: 50px;
     font-size: 1rem; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv #descripcion {
+        margin-left: 10px;
+        margin-right: 10px; } }
   .grid-cv .grid-experiencia {
     display: grid;
     justify-content: space-between;
@@ -163,19 +185,37 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
     grid-template-areas: "izquierda derecha"; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv .grid-experiencia {
+        grid-gap: 0%;
+        grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
     .grid-cv .grid-experiencia #experienciaIzquierda {
       grid-area: izquierda;
       margin-left: 50px; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        .grid-cv .grid-experiencia #experienciaIzquierda {
+          margin-left: 10px;
+          text-align: center; } }
       .grid-cv .grid-experiencia #experienciaIzquierda p {
-        font-weight: 600; }
+        font-weight: 600;
+        margin-bottom: 0px; }
     .grid-cv .grid-experiencia #experienciaDerecha {
       grid-area: derecha;
       margin-right: 10px; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        .grid-cv .grid-experiencia #experienciaDerecha {
+          text-align: center; } }
       .grid-cv .grid-experiencia #experienciaDerecha h4 {
         font-size: 1rem;
         font-weight: 300; }
+        @media screen and (min-width: 250px) and (max-width: 768px) {
+          .grid-cv .grid-experiencia #experienciaDerecha h4 {
+            margin-top: 5px; } }
       .grid-cv .grid-experiencia #experienciaDerecha p {
         font-size: 0.9rem; }
+        @media screen and (min-width: 250px) and (max-width: 768px) {
+          .grid-cv .grid-experiencia #experienciaDerecha p {
+            margin-bottom: 10px; } }
 
 .flexAbajo {
   display: flex;
@@ -185,8 +225,8 @@ p {
   margin-right: 100px; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .flexAbajo {
-      margin-left: 40px;
-      margin-right: 40px; } }
+      margin-left: 10px;
+      margin-right: 10px; } }
   .flexAbajo .titulosAbajo {
     border-bottom: solid;
     border-width: 1px;
@@ -211,8 +251,9 @@ p {
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-referencias {
-      margin-left: 50px;
-      margin-right: 50px;
+      grid-gap: 2%;
+      margin-left: 20px;
+      margin-right: 20px;
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
   .grid-referencias #ref-izquierda {
     grid-area: izquierda; }
@@ -223,6 +264,9 @@ p {
     grid-template-columns: 15% 85%;
     margin-bottom: 15px;
     grid-template-areas: "foto titulo" "foto cargo"; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-referencias .grid-cargos {
+        grid-template-areas: "foto foto" "titulo titulo" "cargo cargo"; } }
     .grid-referencias .grid-cargos .ref-foto {
       grid-area: foto;
       height: 65px;
@@ -230,19 +274,33 @@ p {
       border-radius: 50%;
       margin-right: 10px;
       margin-bottom: 10px; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        .grid-referencias .grid-cargos .ref-foto {
+          margin-left: 60px; } }
     .grid-referencias .grid-cargos .ref-titulo {
       grid-area: titulo;
-      font-size: 1.1rem;
       margin-right: 10px;
       margin-bottom: 0px; }
+      .grid-referencias .grid-cargos .ref-titulo h4 {
+        font-size: 1.1rem; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        .grid-referencias .grid-cargos .ref-titulo {
+          text-align: center; } }
     .grid-referencias .grid-cargos .ref-cargo {
       grid-area: cargo;
       font-size: 1rem;
       margin-top: 0px; }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        .grid-referencias .grid-cargos .ref-cargo {
+          text-align: center; } }
   .grid-referencias .p-referencias {
     font-style: italic;
     font-size: 0.9rem;
     margin-left: 10px;
     margin-right: 10px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-referencias .p-referencias {
+        margin-right: 0px;
+        margin-left: 0px; } }
 
 /*background-color: #333333;*/

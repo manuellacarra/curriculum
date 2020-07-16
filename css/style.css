@@ -29,6 +29,10 @@ p {
   margin-left: 100px;
   margin-right: 100px;
   grid-template-areas: "izquierda derecha"; }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    .grid-cv {
+      margin-left: 50px;
+      margin-right: 50px; } }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-cv {
       margin-left: 5px;
@@ -61,10 +65,10 @@ p {
     font-weight: 800;
     color: #333333;
     margin-right: 40px;
-    margin-left: 40px; }
+    margin-left: 40px;
+    text-align: center; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-cv #manuelLacarra {
-        text-align: center;
         margin-right: 10px;
         margin-left: 10px; } }
   .grid-cv #text-secondary {
@@ -113,6 +117,10 @@ p {
     margin-left: 30px;
     margin-right: 30px;
     grid-template-areas: "tel num" "sobre mail" "linkedin enlace" "flecha ciudad"; }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      .grid-cv .grid-datos {
+        margin-left: 15px;
+        margin-right: 10px; } }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-cv .grid-datos {
         margin-left: 15px;
@@ -150,6 +158,10 @@ p {
     margin-left: 50px;
     margin-right: 30px;
     grid-template-areas: "izquierda derecha"; }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      .grid-cv .grid-habilidades {
+        margin-left: 20px;
+        margin-right: 20px; } }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-cv .grid-habilidades {
         text-align: center; } }
@@ -307,7 +319,7 @@ p {
     grid-area: titulo;
     margin-right: 10px;
     margin-bottom: 0px; }
-    @media screen and (min-width: 250px) and (max-width: 1200px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       .grid-cargos .ref-titulo, #mery .ref-titulo, #mery .mery-titulo {
         margin-left: 30px; } }
     .grid-cargos .ref-titulo h4, #mery .ref-titulo h4, #mery .mery-titulo h4 {
@@ -316,7 +328,7 @@ p {
     grid-area: cargo;
     font-size: 1rem;
     margin-top: 0px; }
-    @media screen and (min-width: 250px) and (max-width: 1200px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       .grid-cargos .ref-cargo, #mery .ref-cargo, #mery .mery-cargo {
         margin-left: 30px; } }
 
@@ -340,10 +352,10 @@ p {
       margin-left: 30px;
       margin-right: 10px;
       margin-top: 30px; } }
-  @media screen and (min-width: 250px) and (max-width: 1200px) {
+  @media screen and (min-width: 250px) and (max-width: 992px) {
     #mery .mery-titulo {
       margin-left: 45px; } }
-  @media screen and (min-width: 250px) and (max-width: 1200px) {
+  @media screen and (min-width: 250px) and (max-width: 992px) {
     #mery .mery-cargo {
       margin-left: 45px; } }
 

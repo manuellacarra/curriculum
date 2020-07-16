@@ -56,6 +56,10 @@ p {
     border-radius: 50%;
     margin-bottom: 25px;
     margin-left: 65px; }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      .grid-cv #manuel {
+        margin-left: 50px;
+        margin-right: 50px; } }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-cv #manuel {
         margin-left: 70px; } }
@@ -198,9 +202,6 @@ p {
     display: flex;
     align-content: center;
     margin-bottom: 20px; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
-      .grid-cv .flexTitulos {
-        text-align: center; } }
     .grid-cv .flexTitulos .iconos {
       margin-right: 15px;
       margin-top: 5px;

@@ -47,7 +47,7 @@ p {
     margin-left: 65px; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-cv #manuel {
-        margin-left: 32px; } }
+        margin-left: 75px; } }
   .grid-cv #manuelLacarra {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
@@ -145,8 +145,7 @@ p {
     grid-template-areas: "izquierda derecha"; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-cv .grid-habilidades {
-        margin-left: 15px;
-        margin-right: 5px; } }
+        text-align: center; } }
     .grid-cv .grid-habilidades .tipo {
       grid-area: izquierda; }
     .grid-cv .grid-habilidades .habilidad {
@@ -159,6 +158,13 @@ p {
       margin-top: 5px; }
     .grid-cv .grid-habilidades #primerPunto {
       margin-left: 100px; }
+  .grid-cv .lista {
+    margin-left: 50px;
+    padding-left: 0px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cv .lista {
+        text-align: center;
+        margin-left: 0px; } }
   .grid-cv .titulosDerecha {
     border-bottom: solid;
     border-width: 1px;
@@ -260,11 +266,11 @@ p {
   grid-template-columns: 47.5% 47.5%;
   grid-gap: 5%;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
   grid-template-areas: "izquierda derecha"; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-referencias {
-      grid-gap: 2%;
+      grid-gap: 30px;
       margin-left: 20px;
       margin-right: 20px;
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
@@ -272,48 +278,73 @@ p {
     grid-area: izquierda; }
   .grid-referencias #ref-derecha {
     grid-area: derecha; }
-  .grid-referencias .grid-cargos {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    margin-bottom: 15px;
-    grid-template-areas: "foto titulo" "foto cargo"; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
-      .grid-referencias .grid-cargos {
-        grid-template-areas: "foto foto" "titulo titulo" "cargo cargo"; } }
-    .grid-referencias .grid-cargos .ref-foto {
-      grid-area: foto;
-      height: 65px;
-      width: 65px;
-      border-radius: 50%;
+
+.grid-cargos, #mery {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  margin-bottom: 15px;
+  align-items: center;
+  grid-template-areas: "foto titulo" "foto cargo"; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .grid-cargos, #mery {
+      margin-left: 10px;
       margin-right: 10px;
-      margin-bottom: 10px; }
-      @media screen and (min-width: 250px) and (max-width: 768px) {
-        .grid-referencias .grid-cargos .ref-foto {
-          margin-left: 60px; } }
-    .grid-referencias .grid-cargos .ref-titulo {
-      grid-area: titulo;
-      margin-right: 10px;
-      margin-bottom: 0px; }
-      .grid-referencias .grid-cargos .ref-titulo h4 {
-        font-size: 1.1rem; }
-      @media screen and (min-width: 250px) and (max-width: 768px) {
-        .grid-referencias .grid-cargos .ref-titulo {
-          text-align: center; } }
-    .grid-referencias .grid-cargos .ref-cargo {
-      grid-area: cargo;
-      font-size: 1rem;
-      margin-top: 0px; }
-      @media screen and (min-width: 250px) and (max-width: 768px) {
-        .grid-referencias .grid-cargos .ref-cargo {
-          text-align: center; } }
-  .grid-referencias .p-referencias {
-    font-style: italic;
-    font-size: 0.9rem;
-    margin-left: 10px;
-    margin-right: 10px; }
+      grid-template-areas: "foto foto" "titulo titulo" "cargo cargo"; } }
+  .grid-cargos .ref-foto, #mery .ref-foto {
+    grid-area: foto;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-bottom: 10px; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
-      .grid-referencias .p-referencias {
-        margin-right: 0px;
-        margin-left: 0px; } }
+      .grid-cargos .ref-foto, #mery .ref-foto {
+        margin-left: 120px; } }
+  .grid-cargos .ref-titulo, #mery .ref-titulo {
+    grid-area: titulo;
+    margin-right: 10px;
+    margin-bottom: 0px; }
+    .grid-cargos .ref-titulo h4, #mery .ref-titulo h4 {
+      font-size: 1.1rem; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cargos .ref-titulo, #mery .ref-titulo {
+        text-align: center; } }
+  .grid-cargos .ref-cargo, #mery .ref-cargo {
+    grid-area: cargo;
+    font-size: 1rem;
+    margin-top: 0px; }
+    @media screen and (min-width: 250px) and (max-width: 768px) {
+      .grid-cargos .ref-cargo, #mery .ref-cargo {
+        text-align: center; } }
+
+.p-referencias, .p-mery {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-left: 30px;
+  margin-right: 30px; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .p-referencias, .p-mery {
+      margin-right: 0px;
+      margin-left: 0px; } }
+
+#mery {
+  margin-left: 300px;
+  margin-right: 300px;
+  grid-template-columns: 10% 90%;
+  align-items: center; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    #mery {
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 30px; } }
+
+.p-mery {
+  margin-left: 330px;
+  margin-right: 330px;
+  margin-bottom: 100px; }
+  @media screen and (min-width: 250px) and (max-width: 768px) {
+    .p-mery {
+      margin-right: 20px;
+      margin-left: 20px; } }
 
 /*background-color: #333333;*/

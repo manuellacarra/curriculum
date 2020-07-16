@@ -303,21 +303,21 @@ p {
     border-radius: 50%;
     margin-right: 10px;
     margin-bottom: 10px; }
-  .grid-cargos .ref-titulo, #mery .ref-titulo {
+  .grid-cargos .ref-titulo, #mery .ref-titulo, #mery .mery-titulo {
     grid-area: titulo;
     margin-right: 10px;
     margin-bottom: 0px; }
     @media screen and (min-width: 250px) and (max-width: 1200px) {
-      .grid-cargos .ref-titulo, #mery .ref-titulo {
+      .grid-cargos .ref-titulo, #mery .ref-titulo, #mery .mery-titulo {
         margin-left: 30px; } }
-    .grid-cargos .ref-titulo h4, #mery .ref-titulo h4 {
+    .grid-cargos .ref-titulo h4, #mery .ref-titulo h4, #mery .mery-titulo h4 {
       font-size: 1.1rem; }
-  .grid-cargos .ref-cargo, #mery .ref-cargo {
+  .grid-cargos .ref-cargo, #mery .ref-cargo, #mery .mery-cargo {
     grid-area: cargo;
     font-size: 1rem;
     margin-top: 0px; }
     @media screen and (min-width: 250px) and (max-width: 1200px) {
-      .grid-cargos .ref-cargo, #mery .ref-cargo {
+      .grid-cargos .ref-cargo, #mery .ref-cargo, #mery .mery-cargo {
         margin-left: 30px; } }
 
 .p-referencias, .p-mery {
@@ -340,11 +340,17 @@ p {
       margin-left: 30px;
       margin-right: 10px;
       margin-top: 30px; } }
+  @media screen and (min-width: 250px) and (max-width: 1200px) {
+    #mery .mery-titulo {
+      margin-left: 45px; } }
+  @media screen and (min-width: 250px) and (max-width: 1200px) {
+    #mery .mery-cargo {
+      margin-left: 45px; } }
 
 .p-mery {
   margin-left: 330px;
   margin-right: 330px;
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .p-mery {
       margin-right: 20px;

@@ -176,7 +176,8 @@ p {
       grid-area: izquierda; }
       @media screen and (min-width: 768px) and (max-width: 1200px) {
         .grid-cv .grid-habilidades .tipo p {
-          margin-bottom: 0px; } }
+          margin-bottom: 0px;
+          margin-top: 0px; } }
     .grid-cv .grid-habilidades .habilidades {
       grid-area: derecha; }
       @media screen and (min-width: 768px) and (max-width: 1200px) {
@@ -199,6 +200,9 @@ p {
       @media screen and (min-width: 768px) and (max-width: 1200px) {
         .grid-cv .grid-habilidades #primerPunto {
           margin-left: 0px; } }
+      @media screen and (min-width: 250px) and (max-width: 768px) {
+        .grid-cv .grid-habilidades #primerPunto {
+          margin-left: 80px; } }
   .grid-cv .lista {
     margin-left: 70px;
     padding-left: 0px; }

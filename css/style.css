@@ -26,15 +26,17 @@ p {
   padding: 0px;
   margin-bottom: 30px;
   margin-top: 100px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
   grid-template-areas: "izquierda derecha"; }
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
+  @media screen and (min-width: 768px) and (max-width: 992px) {
     .grid-cv {
-      margin-left: 50px;
-      margin-right: 50px; } }
+      margin-left: 30px;
+      margin-right: 30px;
+      margin-top: 50px; } }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-cv {
+      margin-top: 50px;
       margin-left: 5px;
       margin-right: 5px;
       grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
@@ -54,15 +56,7 @@ p {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    margin-bottom: 25px;
-    margin-left: 65px; }
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-      .grid-cv #manuel {
-        margin-left: 50px;
-        margin-right: 50px; } }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
-      .grid-cv #manuel {
-        margin-left: 70px; } }
+    margin-bottom: 25px; }
   .grid-cv #manuelLacarra {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6rem;
@@ -89,12 +83,10 @@ p {
   .grid-cv .background {
     background-color: #1f2833;
     /*#474b4f*/
-    padding-top: 20px;
-    z-index: 1;
-    overflow: hidden;
+    padding: 20px;
     margin-top: 0px;
     padding-bottom: 30px; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
+    @media screen and (min-width: 250px) and (max-width: 992px) {
       .grid-cv .background {
         margin-left: 0px;
         margin-right: 0px; } }
@@ -110,7 +102,6 @@ p {
     font-size: 1rem;
     font-weight: 600; }
   .grid-cv #datosPersonales {
-    z-index: 999;
     margin-bottom: 0px; }
   .grid-cv .grid-datos {
     display: grid;
@@ -173,16 +164,19 @@ p {
       grid-area: izquierda; }
     .grid-cv .grid-habilidades .habilidad {
       grid-area: derecha; }
-    .grid-cv .grid-habilidades .puntos {
+    .grid-cv .grid-habilidades .puntos, .grid-cv .grid-habilidades .punto-transparente {
       margin-left: 5px;
       margin-right: 5px;
       align-items: center;
       height: 80%;
       margin-top: 5px; }
+    .grid-cv .grid-habilidades .punto-transparente {
+      margin-left: 7px;
+      margin-right: 7px; }
     .grid-cv .grid-habilidades #primerPunto {
       margin-left: 100px; }
   .grid-cv .lista {
-    margin-left: 50px;
+    margin-left: 70px;
     padding-left: 0px; }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-cv .lista {
@@ -223,7 +217,7 @@ p {
     margin-top: 20px;
     margin-bottom: 20px;
     grid-template-areas: "izquierda derecha"; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
+    @media screen and (min-width: 250px) and (max-width: 576px) {
       .grid-cv .grid-experiencia {
         grid-gap: 0%;
         grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
@@ -262,6 +256,10 @@ p {
   margin-bottom: 20px;
   margin-left: 100px;
   margin-right: 100px; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .flexAbajo {
+      margin-left: 30px;
+      margin-right: 30px; } }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .flexAbajo {
       margin-left: 10px;
@@ -288,6 +286,10 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
   grid-template-areas: "izquierda derecha"; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .grid-referencias {
+      margin-left: 50px;
+      margin-right: 50px; } }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .grid-referencias {
       grid-gap: 30px;
@@ -348,6 +350,10 @@ p {
   margin-right: 300px;
   grid-template-columns: 10% 90%;
   align-items: center; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    #mery {
+      margin-left: 100px;
+      margin-right: 100px; } }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     #mery {
       margin-left: 30px;
@@ -364,6 +370,10 @@ p {
   margin-left: 330px;
   margin-right: 330px;
   margin-bottom: 50px; }
+  @media screen and (min-width: 768px) and (max-width: 992px) {
+    .p-mery {
+      margin-left: 100px;
+      margin-right: 100px; } }
   @media screen and (min-width: 250px) and (max-width: 768px) {
     .p-mery {
       margin-right: 20px;

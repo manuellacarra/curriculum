@@ -114,8 +114,8 @@ p {
     grid-template-areas: "tel num" "sobre mail" "linkedin enlace" "flecha ciudad"; }
     @media screen and (min-width: 768px) and (max-width: 1200px) {
       .grid-cv .grid-datos {
-        margin-left: 15px;
-        margin-right: 10px; } }
+        margin-left: 0px;
+        margin-right: 0px; } }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-cv .grid-datos {
         margin-left: 15px;
@@ -126,24 +126,36 @@ p {
     .grid-cv .grid-datos #tel-enlace-contacto {
       grid-area: num;
       margin-left: 5px; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .grid-cv .grid-datos #tel-enlace-contacto {
+          margin-left: 0px; } }
     .grid-cv .grid-datos #mail-icono-contacto {
       grid-area: sobre;
       margin-top: 5px; }
     .grid-cv .grid-datos #mail-enlace-contacto {
       grid-area: mail;
       margin-left: 5px; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .grid-cv .grid-datos #mail-enlace-contacto {
+          margin-left: 0px; } }
     .grid-cv .grid-datos #linkedin-icono {
       grid-area: linkedin;
       margin-top: 5px; }
     .grid-cv .grid-datos #linkedin-enlace {
       grid-area: enlace;
       margin-left: 5px; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .grid-cv .grid-datos #linkedin-enlace {
+          margin-left: 0px; } }
     .grid-cv .grid-datos #map-icono-contacto {
       grid-area: flecha;
       margin-top: 5px; }
     .grid-cv .grid-datos #map-enlace-contacto {
       grid-area: ciudad;
       margin-left: 5px; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .grid-cv .grid-datos #map-enlace-contacto {
+          margin-left: 0px; } }
   .grid-cv .grid-habilidades {
     display: grid;
     grid-template-columns: 2.5% 95%;
@@ -155,14 +167,19 @@ p {
     grid-template-areas: "izquierda derecha"; }
     @media screen and (min-width: 768px) and (max-width: 1200px) {
       .grid-cv .grid-habilidades {
-        margin-left: 20px;
-        margin-right: 20px; } }
+        margin-left: 30px;
+        text-align: center;
+        grid-template-areas: "izquierda izquierda" "derecha derecha"; } }
     @media screen and (min-width: 250px) and (max-width: 768px) {
       .grid-cv .grid-habilidades {
         text-align: center; } }
     .grid-cv .grid-habilidades .tipo {
       grid-area: izquierda; }
-    .grid-cv .grid-habilidades .habilidad {
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .grid-cv .grid-habilidades .tipo p {
+          margin-bottom: 0px;
+          margin-top: 20px; } }
+    .grid-cv .grid-habilidades .habilidades {
       grid-area: derecha; }
     .grid-cv .grid-habilidades .puntos, .grid-cv .grid-habilidades .punto-transparente {
       margin-left: 5px;
@@ -170,11 +187,17 @@ p {
       align-items: center;
       height: 80%;
       margin-top: 5px; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .grid-cv .grid-habilidades .puntos, .grid-cv .grid-habilidades .punto-transparente {
+          margin-bottom: 5px; } }
     .grid-cv .grid-habilidades .punto-transparente {
       margin-left: 7px;
       margin-right: 7px; }
     .grid-cv .grid-habilidades #primerPunto {
       margin-left: 100px; }
+      @media screen and (min-width: 768px) and (max-width: 1200px) {
+        .grid-cv .grid-habilidades #primerPunto {
+          margin-left: 0px; } }
   .grid-cv .lista {
     margin-left: 70px;
     padding-left: 0px; }

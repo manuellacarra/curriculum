@@ -92,7 +92,7 @@ p {
   .grid-cv .titulos-izquierda {
     margin-top: 30px;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     margin-right: 20px;
     margin-left: 20px;
     font-family: 'Montserrat', sans-serif;
@@ -204,13 +204,8 @@ p {
       @media screen and (min-width: 250px) and (max-width: 768px) {
         .grid-cv .grid-habilidades #primerPunto {
           margin-left: 80px; } }
-  .grid-cv .lista {
-    margin-left: 70px;
-    padding-left: 0px; }
-    @media screen and (min-width: 250px) and (max-width: 768px) {
-      .grid-cv .lista {
-        text-align: center;
-        margin-left: 0px; } }
+  .grid-cv #tres-r {
+    filter: invert(100%); }
   .grid-cv .titulosDerecha {
     border-bottom: solid;
     border-width: 1px;
